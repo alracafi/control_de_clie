@@ -20,7 +20,7 @@
 
 
                     <li class="nav-item">
-                        <a class="form-control me-2 border border-danger"
+                        <a class="form-control me-2 border border-danger bg-green-400"
                             href="{{ route('clientes.create') }}">{{__('buttons.add_client')}}</a>
                     </li>
                     <li class="nav-item">
@@ -28,11 +28,11 @@
                     </li>
                     <li class="nav-item">
                         @if ($num>0)
-                        <a class="form-control me-2 border border-danger"
+                        <a class="form-control me-2 border border-danger  bg-yellow-300""
                             href="{{route('pdf', $cliente_sin_paginar->pluck('id'))}}">{{__('buttons.save_pdf')}}</a>
 
                         @else
-                        <button class="form-control me-2 border border-danger" disabled>{{__('buttons.save_pdf')}}</button>
+                        <button class="form-control me-2 border border-danger disabled>{{__('buttons.save_pdf')}}</button>
                         @endif
                     </li>
                    
